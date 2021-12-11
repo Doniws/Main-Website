@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="description" content="Note C++">
+        <meta name="keyword" content="tutorial C++">
+        <meta name="author" content="Doni Wahyu Saputra">
+        <meta name="msvalidate.01" content="118FC5920D7148A301D6CA879AC59D48" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doni C++ Note</title>
+        <link rel="stylesheet" type="text/css" href="Operator.css" hreflang="id"> 
+        <link rel="shortcut icon" href="images/c-plus-plus-logo.ico" type="image/x-icon">
+    <link rel="icon" href="images/c-plus-plus-logo.ico" type="image/x-icon">   
+    
+      <!-- vetifikasi google -->
+         <!-- vetifikasi google -->
+      <!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+        <meta name="google-site-verification" content="hcQgL_LQ2ZrAxns9T61ARQG3pxiS5YhZlkWrXa08N9E" />
+  
+    </head>
+    <body>
+    
+        <div class="container">
+            
+            <div class="navbar">
+                <a href="javascript:alert(' Website milik pribadi dan bisa juga dilihat oleh orang Website ini dibuat untuk Note ')"> 
+                    <img src="images/c-plus-plus-logo.webp" class="logo" ></a>
+            
+            <nav>
+                <ul id="menuList">
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="aboutme.html">Aboute me</a></li>
+                    <li><a href="Article.html">Article</a></li>
+                    <li><a href="contact.html">My Contact</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a class="active" href="PagefirstC++.html">Note C++</a></li>
+                  
+                </ul>
+            </nav>
+            <img  src="images/menu.webp"  class="menu-icon" onclick="togglemenu()">
+            </div>
+
+            <!-- ini tombol dark mode -->
+            <button class="btn" onclick="myFunction()">Color Mode
+            </button>
+            <br>
+            <!-- Ini adalah judul -->
+            <div class="juduloperator"> 
+                <h1>Jenis-jenis Operator C++</h1></p>
+                <br>
+                <p class="tanggal"><i><img src="images/clock-regular.webp" width="12px" height="12px" > Article ini dibuat tanggal: 7 September 2021</i><p><br>
+             
+            </div>
+
+            <!-- diisi adalah tempat isi -->
+             <article >
+               
+                 <a href="javascript:alert('C++ Operator Web Ini ditulis berdasarkan Belajar dari Sebuah Website  ')"><img class="Judulgambar"src="images/Gambar Judul C++.webp"  ><br></a>
+                 <h2>Kegunaan Operator C++</h2><br>
+                 <p>Operator Ini berguna untuk menghasilkan Hasil yang dimau</p><br>
+                 <p><strong>Contohnya Kalau kamu pergi membeli suatu barang maka harus menggunakan Uang,Uang itu nanti akan dihitung <br>
+                     berapa kamu memberi dan berapa Kembalian dari uang yang kamu beli barang tadi<br></strong></p>
+                    <br>
+                 <p>Operator tidak hanya menghasilkan itu saja tetapi juga menghasil 
+                     <strong>Benar</strong> atau <strong>Tidak</strong> <br>
+                    Suatu Benda atau apapun yang ada dengan menggunakan boolean (bool)</p><br>
+                     <br>
+                    
+
+                  <h2>1.Operator Aritmatika</h2>
+                   <br>
+                   <P>Operator aritmatika merupakan operator yang digunakan untuk melakukan operasi aritmatika. </P>
+                   <br>
+                   <p>Lihat di bawah ini adalah table Operator Aritmatika:</p>
+                   <br>
+                   <!-- Ini Adalah Tabel -->
+                   <div style="max-width: 600px; margin-left:0px  auto">
+                    <table class="table" border="1" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Nama Operator</th>
+                                <th>Simbol Operator</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                            <tr>
+                                <td>
+                                    <ul class=Op>
+                                        <p class="a">Penjumlahan</p>
+                                        <p class="b">Pengurangan</p>
+                                        <p class="c">Perkalian</p>
+                                        <p class="d">Pembagian</p>
+                                        <p class="e">Sisa Bagi</p>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul class=Si>
+                                        <p class="f">+</p>
+                                        <p class="g">-</p>
+                                        <p class="h">*</p>
+                                        <p class="i">/</p>
+                                        <p class="j">%</p>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                 <br>
+                 <br>
+
+                 <!-- ini contoh aritmatika -->
+                <p>contoh hasil campuran,kekurangan nya adalah pembagian yang menghasilkan koma tidak akan di tampilkan di kode pemograman tersebut:</p><br>
+                <code>
+                <p class="con">#include &lt;iostream&gt; <br> 
+                    
+                   
+                        <br>
+                    using namespace std;<br>
+                    <br>
+                
+                    int main() {  <br>
+                        <br>
+                        int a, b; <br>
+                        <br>
+                        cout << "Inputkan nilai a: "; <br>
+                        cin >> a;<br>
+                        <br>
+                        cout << "Inputkan nilai b: "; <br>
+                        cin >> b; <br>
+                        <br>
+                        cout << "Hasil a + b: " << a + b << endl; <br>
+                        cout << "Hasil a - b: " << a - b << endl;  <br>
+                        cout << "Hasil a * b: " << a * b << endl;  <br>
+                        cout << "Hasil a / b: " << a / b << endl;  <br>
+                        cout << "Hasil a % b: " << a % b << endl;  <br>
+                        <br>
+                        return 0;<br>
+                    }
+                </code>
+                    </p>
+                      <br>
+                      <!-- artikel ulasan -->
+                    <p>Hasilnya:</p>
+                    <img class="g1"src="images/Aritmatikac++.webp" width="80%"><br>
+                    <br>
+                    <p>Perhatikan <strong>/</strong> ini adalah pembagian tapi 77 di bagi 6 hasilnya kok 12?<br>
+                       karena kita menggunakan int ,int adalah bilangan bulat jika ingin menghasilkan bilangan desimal gunakan 
+                       <strong>float</strong>
+                       <br>
+                    </p>
+                    <code>
+                    <p class="con">#include &lt;iostream&gt; <br>
+                     
+                        <br>
+                        using namespace std;<br>
+                        <br>
+                        int main() {  <br>
+                            <br>
+                            float a, b; <br>
+                            <br>
+                            cout << "Inputkan nilai a: "; <br>
+                            cin >> a;<br>
+                            <br>
+                            cout << "Inputkan nilai b: "; <br>
+                            cin >> b; <br>
+                            <br>
+                            cout << "Hasil a / b: " << a / b << endl;  <br>
+                            <br>
+                            return 0;<br>
+                        }
+                        </p>
+                   </code>
+
+                   <br>
+                   <br>
+                        <h2>2.Operator Penugasan</h2>
+                        <br>
+                        <p>Operator penugasan <strong>(Assignment Operator)</strong> merupakan operator untuk meberikan tugas pada variabel. Biasanya untuk mengisi nilai.</p>
+                        <br>
+                        <br>
+                        Lihat di bawah ini operator penegasan:
+                        <br>
+                        <br>
+                        <!-- Ini Adalah Tabel -->
+                   <div style="max-width: 600px; margin-left:0px  auto">
+                    <table class="table" border="1" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Nama Operator</th>
+                                <th>Simbol Operator</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                            <tr>
+                                <td>
+                                    <ul class=Op>
+                                        <p class="a">Pengisian Nilai</p>
+                                        <p class="b">Pengisian dan Penambahan</p>
+                                        <p class="c">Pengisian dan Pengurangan</p>
+                                        <p class="d">Pengisian dan Perkalian</p>
+                                        <p class="e">Pengisian dan Pembagian</p>
+                                        <p class="b">Pengisian dan Sisa bagi	 </p>
+                                        <p class="a">Pengisian dan shift left</p>
+                                        <p class="b">Pengisian dan shift right	</p>
+                                        <p class="a">Pengisian dan bitwise AND</p>
+                                        <p class="b">Pengisian dan bitwise OR</p>
+                                        <p class="a">Pengisian dan bitwise XOR</p>
+                                        	
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul class=Si>
+                                        <p class="f">=</p>
+                                        <p class="g">+=</p>
+                                        <p class="h">-=</p>
+                                        <p class="i">*=</p>
+                                        <p class="j">/= </p>
+                                        <p class="g">%=</p>
+                                        <p class="h"> <<=</p>
+                                        <p class="i"> >>=</p>
+                                        <p class="j"> &=</p>
+                                        <p class="g"> |=</p>
+                                        <p class="h"> ^=</p>
+                                        <p class="g"></p>
+                                        <p class="h"></p>
+                                        <p class="f"></p>
+                                        <p class="j"></p>
+                                   </ul>
+                                   </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <p>Sekarang kita coba kode nya</p>
+                </div>
+                 <br>
+                 <br>
+                 <code>
+                    <p class="con">#include &lt;iostream&gt; <br>
+                        using namespace std;<br>
+                        <br>
+                        int main() {<br>
+                            <br>
+                            int a, b;<br>
+                            <br>
+                            // pengisian nilai dengan operator =<br>
+                            a = 12;<br>
+                            b = 900;<br>
+                            <br>
+                            // pengisian sekaligus penambahan<br>
+                            b += a; // ini sama seperti b = b + a<br>
+                            cout << "Hasil b += a adalah " << b << endl;<br>
+                            <br>
+                            // pengisian sekaligus pengurangan<br>
+                            b -= a; // ini sama seperti b = b - a<br>
+                            cout << "Hasil b -= a adalah " << b << endl;<br>
+                            <br>
+                            // pengisian sekaligus perkalian<br>
+                            b *= a; // ini sama seperti b = b * a<br>
+                            cout << "Hasil b *= a adalah " << b << endl;<br>
+                            <br>
+                            // pengisian sekaligus pembagian<br>
+                            b /= a; // ini sama seperti b = b / a<br>
+                            cout << "Hasil b /= a adalah " << b << endl;<br>
+                            <br>
+                            // pengisian sekaligus penambahan<br>
+                            b %= a; // ini sama seperti b = b % a<br>
+                            cout << "Hasil b %= a adalah " << b << endl;<br>
+                            <br>
+                            return 0;<br>
+                        }<br>
+                    </p>
+                 </code>
+                 <p>Hasilnya</p>
+                 <br>
+                 <img src="images/penugasanc++.webp">
+                 <br>
+                 Pada program tersebut, variabel b kita isi ulang dengan operator penugasan.<br>
+                 <br>
+                 Sebagai contoh, operasi:<br>
+                 b += a<br>
+                 Sama seperti operasi:<br>
+                 b = b + a<br>
+                 Artinya kita akan mengisi nilai untuk b dengan nilai b ditambah nilai a.<br>
+                 <br>
+                 <br>
+                 Begitu juga dengan opeartor yang lain.<br>
+                 b *= a; // -> b = b * a<br>
+                 Isi b dengan nilai dari perkalian b dengan a.<br>
+                 <br>
+                 Jadi operator ini untuk mengisi nilai.<br>
+                 <br>
+
+                 <h2>3.Operator Pembanding</h2>
+                            <br>
+                Operator pembanding adalah operator untuk memabndingkan dua buah nilai.<br>
+                Operator ini juga dikenal dengan operator relasi.<br>
+               <br>
+               <p>Bisa dilihat tebal di bawah ini:</p>
+                <!-- Ini Adalah Tabel -->
+                <div style="max-width: 600px; margin-left:0px  auto">
+                    <table class="table" border="1" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Nama Operator</th>
+                                <th>Simbol Operator</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                            <tr>
+                                <td>
+                                    <ul class=Op>
+                                        <p class="a">Lebih Besar	   </p>
+                                        <p class="b">Lebih Kecil	</p>
+                                        <p class="a">Sama Dengan	 </p>
+                                        <p class="b">Tidak Sama dengan</p>
+                                        <p class="a">Lebih Besar Sama dengan	          </p>
+                                        <p class="b">Lebih Kecil Sama dengan</p>
+                                        
+                                                           
+                                                              
+                                                             
+                                        	              
+                                        
+                                        	          
+                                    </ul>
+                                </td>           
+                                <td>
+                                    <ul class=Si>
+                                        <p class="f">></p>
+                                        <p class="g"><</p>
+                                        <p class="f">==</p>
+                                        <p class="g">!=</p>
+                                        <p class="f">>=</p>
+                                        <p class="g"><=</p>
+                                        
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                 <br>
+                 <br>
+             </article>
+
+
+
+
+
+
+
+
+
+
+            <!-- Disini untuk java scripnya -->
+            <script>
+                // Untuk dark mode
+                function myFunction(){
+                    var element = document.body
+
+                    element.classList.toggle("dark-mode");
+                }
+                // untuk menu disini
+                var menuList= document.getElementById("menuList");
+            menuList.style.maxHeight="0px";
+            function togglemenu(){
+
+                if( menuList.style.maxHeight=="0px")
+                {
+                    menuList.style.maxHeight="130px";
+                }else{
+                    menuList.style.maxHeight="0px";
+                }
+            }
+
+           
+            </script>
+          
+
+        </div>
+
+    </body>
+</html>

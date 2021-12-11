@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msvalidate.01" content="118FC5920D7148A301D6CA879AC59D48" />
+    <meta name="description" content="Request For this Website">
+    <meta name="keyword" content="My Contact">
+    <meta name="author" content="Doni Wahyu Saputra">
+    <meta name="google-site-verification" content="hcQgL_LQ2ZrAxns9T61ARQG3pxiS5YhZlkWrXa08N9E" />
+    <title>Doni Personal Contact</title>          
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/19584/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+
+<body>
+
+        <div class="wrapper">
+            <header class="header">Contact me</header>
+            <form  method="POST"  id="myForm">
+              <div class="dbl-field">
+                <div class="field">
+                  <input type="text" name="name" placeholder="Enter your name">
+                  <i class='fas fa-user'></i>
+                </div>
+                <div class="field">
+                  <input type="text" name="email" placeholder="Enter your email">
+                  <i class='fas fa-envelope'></i>
+                </div>
+              </div>
+              <div class="dbl-field">
+                <div class="field">
+                  <input type="text" name="number" placeholder="Enter your number">
+                  <i class='fas fa-phone-alt'></i>
+                </div>
+                <div class="field">
+                  <input type="text" name="website" placeholder="Enter your website">
+                  <i class='fas fa-globe'></i>
+                </div>
+              </div>
+              <div class="message">
+                <textarea placeholder="Write your message" name="massage"></textarea>
+                <i class="material-icons"></i>
+              </div>
+              <div class="button-area">
+                <button   onclick='SubForm()' type="submit">Send Message</button>
+                <span></span>
+              </div>
+            </form>
+          </div>
+<script>
+  function  SubForm() {
+      var log_out = confirm;
+        var bx  = 
+        document.getElementById("log_out");
+        if (confirm("ID: Terimakasih Telah mengujungi website saya pesan anda sudah terkirim")) {
+          window.location = "index.html";
+        } 
+        else ("You press batal")
+        {
+          
+          }
+  
+        }
+</script>
+    
+</body>
+</html>
