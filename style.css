@@ -4,6 +4,9 @@
     font-family: calibri;
     list-style: none;
 }
+body{
+    background-color: #000;
+}
 /* cursor wolf*/
 /* untuk umum  */
 [id^=root], [id^=docs], .cc_cursor, body, .ogdlpmhglpejoiomcodnpjnfgcpmgale_default, body, html, input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"], input::-webkit-contacts-auto-fill-button, input:read-only {
