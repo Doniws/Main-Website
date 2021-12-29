@@ -160,6 +160,7 @@ body section.container header.navbar img.menu-icon {
 }
 
 /* sosial media */
+/* ini sudah tida dihgunakan lagi  */
 .Sosmed a img {
 
     margin: 20px;
@@ -231,9 +232,12 @@ nav ul li {
     border-style: solid;
     border-color: transparent;
     background-color: transparent;
-    left: 90%;
+    /* left: 90%; */
+    float: right;
+    text-align: right;
+    margin-right: auto;
     padding: 6px;
-    border: 1px solid rgb(138, 133, 133);
+    border: 1.5px solid rgb(138, 133, 133);
     border-radius: 6px;
     cursor: pointer;
     z-index: 99;
@@ -278,6 +282,7 @@ ul .li i {
     margin: 5px 5px;
     cursor: pointer;
     transition: .5s;
+    z-index: 99 !important;
 
     top: 55px;
 

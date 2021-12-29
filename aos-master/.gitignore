@@ -27,3 +27,8 @@ Thumbs.db
 # Folders to ignore
 bower_components
 node_modules
+
+# Dev files to ignore
+dist
+cypress/screenshots
+cypress/videos
