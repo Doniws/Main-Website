@@ -10,17 +10,59 @@
     <link rel="stylesheet" href="https://doniws.github.io/Font-Text/Din/Din.css">
 </head>
 <body>
+    <div class="container-slide">
+            <img class="Slides dot anime" src="images/background.png" alt="">
+            <img class="Slides dot anime" src="images/background.jpg" alt="">
+    </div>
     <div class="img">
         <img src="images/img.png" alt="Me">
+        <span class="name">Doni Wahyu Saputra</span>
+        <p>Programmer</p>
     </div>
     <div class="menu">
-        <span><a>HELLO</a></span>
-        <span><a>TEST</a></span>
-        <span><a>GITHUB</a></span>
-        <span><a>NAME</a></span>
-        <span><a>Doniws</a></span>
+        <span>
+            <img src="images/logoutama.gif" alt="">
+            <a href="https://doniws-portfolio.netlify.app">MY PORTFOLIO</a>
+        </span>
+        <span>
+            <img src="images/spacex.png" alt="">
+            <a>BEST PROJECT</a>
+        </span>
+        <span>
+            <img src="images/github.png" alt="">
+            <a>GITHUB</a>
+        </span>
+        <span>
+            <img src="images/c++.jpg" alt="">
+            <a>Favorite Programming Languange</a>
+        </span>
+        <span>
+            <img src="images/meta.gif" alt="">
+            <a>Meta</a>
+        </span>
         
     </div>
-    
+    <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("Slides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000);
+}
+</script>
+
 </body>
 </html>

@@ -2,27 +2,51 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 body{
-    background: url(images/background.png);
+    /* background: url(images/background.png); */
     width: 100%;
     height: 100vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+img.Slides {
+        width: 100%;
+    height: 100vh;
+    position:absolute;
+    z-index: -1;
+    transition: all ease 1s;
+
+}
 .img{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 30px;
+    flex-direction: column;
+}
+.img span{
+    color: #fff;
+    padding-top: 10px;
+    font-family: "DinProBold";
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.img p{
+    color: #fff;
+    padding-top: 5px;
+    font-family: "DinProBold";
+    text-transform: uppercase;
+    font-size: 14px;
 }
 .img img{
-    border-color: #112;
+    border-color: rgb(255, 255, 255);
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
-    width: 240px;
+    width: 170px;
 }
 .menu{
     display: flex;
@@ -33,23 +57,38 @@ body{
     flex-wrap: nowrap;
 }
 .menu span{
-    padding: 18px;
+    /* padding: 18px; */
+        padding: 19px 67px;
     border-width: 2px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     text-align: center;
     position: relative;
     width: 55%;
-    border-color: #112;
+    border-color: rgb(255, 255, 255);
     border-style: solid;
     margin-bottom: 7px;
-    color: #112;
+    color: rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
 }
 .menu span:hover{
-    background-color: rgb(46, 44, 44);
+    background-color: #112;
     color: white;
-    border-color: rgb(46, 44, 44);
+    border-color: #112;
 }
 .menu span a{
     text-decoration: none;
+    color: #fff;
     font-family: "DinBold";
+}
+.menu span img,.menu span i{
+    left: 5px;
+    width: 40px;
+    position: absolute;
+        align-items: center;
+    font-size: 25px;
+
+    
 }
