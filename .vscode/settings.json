@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Visual Studio Dark",
-    "workbench.preferredDarkColorTheme": "Visual Studio Dark",
-    "liveServer.settings.port": 5501
+  "workbench.colorTheme": "Darcula",
+  "workbench.preferredDarkColorTheme": "Visual Studio Dark",
+  "liveServer.settings.port": 3636
 }
