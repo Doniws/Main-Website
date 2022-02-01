@@ -131,3 +131,7 @@ container-slide{
         width: 90%;
     }
 }
+::-webkit-scrollbar{
+    background: transparent;
+    width: 0;
+}
